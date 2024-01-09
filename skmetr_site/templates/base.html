@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/sk_logo.png' %}">
+    <title>СК МЕТР</title>
+</head>
+<body>
+    <div class="site-area grid-container">
+        <header class="site-header">
+            <nav class="site-nav">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <div class="nav-li-div" >
+                            <a href="{% url 'home' %}" class="a-header"><img class="ui-icon" src="{% static 'images/logo.jpg' %}">
+                                ГЛАВНАЯ
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-li">
+                        <div class="nav-li-div" >
+                            <a href="/services/about/" class="a-header">
+                                О НАС
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-li">
+                        <div class="nav-li-div" >
+                            <a href="/services/repair_flat/" class="a-header">
+                                РЕМОНТ КВАРТИР
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-li">
+                        <div class="nav-li-div" >
+                            <a href="/services/repair_cottage/" class="a-header">
+                                РЕМОНТ КОТТЕДЖЕЙ
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-li">
+                        <div class="nav-li-div" >
+                            <a href="/services/repair_prom/" class="a-header">
+                                ПРОМЫШЛЕННЫЙ РЕМОНТ
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="mainpage content">
+                {% block maincontent %}
+                {% endblock %}
+                <footer class="content-block dark">
+                    <div class="wrapper">
+                        <div class="block-div">
+                            <div class="block-boxes">
+                                <div class="text-box">
+                                    <div class="textbox">
+                                        <strong>email:</strong>
+                                        <strong>телефон</strong>
+                                        <strong>адрес</strong>
+                                        <strong>ИНН СКМЕТР</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </main>
+
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
+

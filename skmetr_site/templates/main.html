@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+    <div class="content-block dark" id="blockN1">
+        <div class="wrapper">
+            <h1 class="block-header header1">РЕМОНТ? БЕЗ ПРОБЛЕМ!</h1>
+            <div class="block-div">
+                <div class="vert-container">
+                    <div class="block-boxes">
+                        <div class="frame-box">
+                            <a href="#project">
+                                <div class="frame-num">1</div>
+                                <strong>Сделаем проект</strong>
+                            </a>
+                        </div>
+                            <div class="frame-box">
+                                <a href="#materials">
+                                <div class="frame-num">2</div>
+                                <strong>Закупим материалы</strong>
+                                </a>
+                            </div>
+                            <div class="frame-box">
+                                <a href="#control">
+                                <div class="frame-num">3</div>
+                                <strong>Проверим качество</strong>
+                                </a>
+                            </div>
+                            <div class="frame-box">
+                                <a href="#cleaning">
+                                <div class="frame-num">4</div>
+                                <strong>Уберем после работ</strong>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img class="main-img" src="{% static 'images/brigadir.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block" id="project">
+        <div class="wrapper">
+            <h1 class="block-header">СОЗДАНИЕ ПРОЕКТА</h1>
+            <div class="block-div">
+                <div class="vert-container">
+                    <div class="block-boxes">
+                        <div class="text-box">
+                            <div class="frame-num">1</div>
+                            <div class="textbox">
+                                <strong>Наши эксперты по строительству предоставляют полный цикл услуг по разработке проектов и смет.</strong>
+                                <strong>Мы создаем инновационные и функциональные проекты, учитывая ваши потребности и бюджет.</strong>
+                                <strong>Наша команда гарантирует прозрачные сметы, позволяя вам точно оценить затраты на строительство.</strong>
+                                <strong>Доверьте нам ваш проект, и мы обеспечим качественное планирование и финансовую прозрачность для успешной реализации вашей строительной мечты.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <a href="#connect_form"><button class="block-btn"><strong>ВЫЗВАТЬ МАСТЕРА</strong></button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img class="main-img" src="{% static 'images/proekt.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block" id="materials">
+        <div class="wrapper">
+            <h1 class="block-header">ЗАКАЗ МАТЕРИАЛОВ</h1>
+            <div class="block-div">
+                <div class="vert-container">
+                    <div class="block-boxes">
+                        <div class="text-box">
+                            <div class="frame-num">2</div>
+                            <div class="textbox">
+                                <strong>Обеспечьте успешное завершение своего строительного проекта с нашей услугой заказа стройматериалов</strong>
+                                <strong>Мы предлагаем удобный онлайн-каталог с широким выбором высококачественных стройматериалов, гарантируя оперативную доставку прямо на ваш объект.</strong>
+                                <strong>Надежность, качество и простота в каждом заказе – доверьте свое строение профессионалам строительной индустрии.</strong>
+                                <strong>Закажем стройматериалы и доставим на место проведение работ быстро и в срок.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <a href="#connect_form"><button class="block-btn"><strong>ВЫЗВАТЬ МАСТЕРА</strong></button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img class="main-img" src="{% static 'images/materialy.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block dark" id="control">
+        <div class="wrapper">
+            <h1 class="block-header">КОНТРОЛЬ КАЧЕСТВА</h1>
+            <div class="block-div">
+                <div class="vert-container">
+                    <div class="block-boxes">
+                        <div class="text-box">
+                            <div class="frame-num">3</div>
+                            <div class="textbox">
+                                <strong>Строительный контроль - это гарантия безупречного исполнения каждого проекта.</strong>
+                                <strong>Мы осуществляем тщательный контроль на всех этапах строительства, используя современные методы и высокотехнологичное оборудование. </strong>
+                                <strong>Наши квалифицированные специалисты регулярно осуществляют проверки, чтобы удостовериться в соответствии с высокими стандартами качества. </strong>
+                                <strong>Мы стремимся к полной удовлетворенности клиентов, предоставляя надежные и долговечные результаты.</strong>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                        <a href="#connect_form"><button class="block-btn"><strong>ВЫЗВАТЬ МАСТЕРА</strong></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img class="main-img" src="{% static 'images/montazhnik.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block" id="cleaning">
+        <div class="wrapper">
+            <h1 class="block-header">УБОРКА СТРОЙПЛОЩАДКИ</h1>
+            <div class="block-div">
+                <div class="vert-container">
+                    <div class="block-boxes">
+                        <div class="text-box">
+                            <div class="frame-num">4</div>
+                            <div class="textbox">
+                                <strong>"Оптимизируйте свой рабочий процесс с нашей профессиональной уборкой стройплощадок.</strong>
+                                <strong>Наша команда экспертов эффективно освободит ваше пространство от строительного мусора, пыли и остатков материалов.  </strong>
+                                <strong>Мы гарантируем тщательную очистку, соблюдение сроков и высокий стандарт безопасности.</strong>
+                                <strong>Доверьтесь нам, чтобы ваш стройпроект был не только успешным, но и беззаботным.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <a href="#connect_form"><button class="block-btn"><strong>ВЫЗВАТЬ МАСТЕРА</strong></button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img class="main-img" src="{% static 'images/ochistka.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block" id="connect_form">
+        <div class="wrapper">
+            <h1 class="block-header">ФОРМА ОБРАТНОЙ СВЯЗИ</h1>
+            <div class="block-div">
+                <div class="vert-container">
+                    <div class="block-boxes">
+                        <div class="text-box">
+                            <div class="textbox">
+                                <strong>Заполните заявку справа и вы получите:</strong>
+                                <strong>Грамотную консультацию специалиста по монтажу электрики в Вашем доме</strong>
+                                <strong>Выезд мастера за 0 рублей!</strong>
+                                <strong>Точную смету на монтаж электрики в Вашем доме со всеми работами и материалы</strong>
+                                <strong>Договор с гарантией 3 года на все виды работ</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form method="post" class="base-form">
+                        {% csrf_token %}
+                        {% for f in form %}
+                        <div class="field-div">
+                            <p class="form-field"><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{f}}</p>
+                            <div class="form-error">{{f.errors}}</div>
+                        </div>
+                        {% endfor %}
+                        <div class="btn-box">
+                            <button class="block-btn" type="submit"><strong>ВЫЗВАТЬ МАСТЕРА</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

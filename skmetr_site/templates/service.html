@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+    <div class="content-block">
+        <div class="wrapper">
+            <h1 class="block-header">{{ service.serv_name }}</h1>
+            <div class="block-div">
+                <div class="vert-container">
+                    <div class="block-boxes">
+                        <div class="text-box">
+                            <div class="frame-num">+</div>
+                            <div class="textbox">
+                                <strong> {{ service.serv_description }}</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <a href="#connect_form"><button class="block-btn"><strong>ВЫЗВАТЬ МАСТЕРА</strong></button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img class="main-img" src="{{ service.serv_img.url }}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block" id="connect_form">
+        <div class="wrapper">
+            <h1 class="block-header">ФОРМА ОБРАТНОЙ СВЯЗИ</h1>
+            <div class="block-div">
+                <div class="vert-container">
+                    <div class="block-boxes">
+                        <div class="text-box">
+                            <div class="textbox">
+                                <strong>Заполните заявку справа и вы получите:</strong>
+                                <strong>Грамотную консультацию специалиста по монтажу электрики в Вашем доме</strong>
+                                <strong>Выезд мастера за 0 рублей!</strong>
+                                <strong>Точную смету на монтаж электрики в Вашем доме со всеми работами и материалы</strong>
+                                <strong>Договор с гарантией 3 года на все виды работ</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form method="post" class="base-form">
+                        {% csrf_token %}
+                        {% for f in form %}
+                        <div class="field-div">
+                            <p class="form-field"><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{f}}</p>
+                            <div class="form-error">{{f.errors}}</div>
+                        </div>
+                        {% endfor %}
+                        <div class="btn-box">
+                            <button class="block-btn" type="submit"><strong>ВЫЗВАТЬ МАСТЕРА</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
